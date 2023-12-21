@@ -1,14 +1,14 @@
 import { Stack,styled } from "@mui/material";
 
 
-export const MainContainer=styled(Stack)(({theme})=>({
+export const MainContainer=styled(Stack)({
     display:'flex',
     flexDirection:'column',
     margin:'20px',
     width:'100%',
     gap:'10px',
 
-}))
+})
 
 
 export const DetailsContainer=styled(Stack)(({theme})=>({
@@ -21,9 +21,9 @@ export const DetailsContainer=styled(Stack)(({theme})=>({
     }
 }))
 
-export const SummaryContainer=styled(Stack)(({theme})=>({
+export const SummaryContainer=styled(Stack)({
     display:'flex',
     flexDirection:'column',
     gap:'10px',
     width:'100%',
-}))
+})

@@ -1,4 +1,3 @@
-import React from 'react'
 import { DetailsContainer, MainContainer, SummaryContainer } from './style'
 import { Skeleton } from '@mui/material'
 

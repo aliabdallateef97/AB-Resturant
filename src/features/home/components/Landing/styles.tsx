@@ -22,9 +22,9 @@ export const TextInfo = styled(Stack)(({ theme }) => ({
   }
 }));
 
-export const ImgInfo = styled(Stack)(({ theme }) => ({
+export const ImgInfo = styled(Stack)({
     width: "40%",
     '&.img':{
         width:'100%'
     }
-}));
+});

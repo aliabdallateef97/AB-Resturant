@@ -18,10 +18,10 @@ export const MainStack = styled(Stack)(({ theme }) => ({
     }
   }));
   
-  export const ImgInfo = styled(Stack)(({ theme }) => ({
+  export const ImgInfo = styled(Stack)({
       width: "30%",
       '&.img':{
           width:'100%'
       }
-  }));
+  });
   

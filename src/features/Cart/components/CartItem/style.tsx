@@ -1,6 +1,6 @@
 import {Stack,styled} from '@mui/material'
 
-export const CartItemStyle=styled('li')(({theme})=>({
+export const CartItemStyle=styled('li')({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -8,14 +8,14 @@ export const CartItemStyle=styled('li')(({theme})=>({
     padding: '1rem 0',
     margin: '1rem 0',
     flexDirection:'row'
-}))
+})
 
-export const Summary=styled(Stack)(({theme})=>({
+export const Summary=styled(Stack)({
     width: '10rem',
     justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection:'row'
-}))
+})
 
 export const Actions=styled(Stack)(({theme})=>({
     flexDirection:'row',

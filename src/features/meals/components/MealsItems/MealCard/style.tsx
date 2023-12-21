@@ -20,10 +20,10 @@ export const Card=styled(Stack)(({theme})=>({
     }
 }))
 
-export const MealName=styled(Stack)(({theme})=>({
+export const MealName=styled(Stack)({
     height: '3rem',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     textAlign:'center'
-}))
+})

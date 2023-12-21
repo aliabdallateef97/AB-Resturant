@@ -29,10 +29,9 @@ export const DetailsStack=styled(Stack)(({theme})=>({
     }
 }))
 
-export const StyledForm=styled('form')(({theme})=>({
+export const StyledForm=styled('form')({
     display:'flex',
     flexDirection:'row',
     gap:'10px',
-    alignItems:'center',
-    
-}))
+    alignItems:'center',  
+})

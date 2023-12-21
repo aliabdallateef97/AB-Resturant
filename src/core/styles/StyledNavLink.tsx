@@ -11,11 +11,11 @@ export const StyledNavLink=styled(NavLink)(({ theme }) => ({
     width:'100%',
     padding: '0.7rem 2rem',
     '&.active':{
-        backgroundColor: theme.palette.main.lightblue,
-        color: theme.palette.main.light,
+        backgroundColor: theme.palette.info.main,
+        color: theme.palette.success.main,
     },
     '&:hover':{
-        backgroundColor: theme.palette.main.lightblue,
-        color: theme.palette.main.light,
+        backgroundColor: theme.palette.info.main,
+        color: theme.palette.success.main,
     }
 }))
