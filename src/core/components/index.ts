@@ -1,0 +1,6 @@
+export {default as Loader} from './Loader'
+export {default as MetaData} from './metaData'
+export {default as CustomedTypography} from './CustomedTypography'
+export {default as SectionTitle} from './SectionTitle'
+export {default as Logo} from './Logo'
+export {default as Modal} from './Modal'
