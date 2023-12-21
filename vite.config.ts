@@ -8,6 +8,7 @@ export default defineConfig({
   },
   
   plugins: [react()],
+  base:"/AB-Resturant/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
