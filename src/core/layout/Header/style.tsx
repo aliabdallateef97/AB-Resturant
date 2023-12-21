@@ -1,7 +1,7 @@
 import { Stack, styled } from "@mui/material";
 
 export const Header = styled(Stack)(({ theme }) => ({
-    backgroundColor: theme.palette.header.main,
+    backgroundColor: theme.palette.secondary.dark,
     padding:'0 12px',
     '& .navbar':{
         display:'flex',
@@ -10,8 +10,8 @@ export const Header = styled(Stack)(({ theme }) => ({
     }
 }));
 
-export const Nav = styled(Stack)(({ theme }) => ({
+export const Nav = styled(Stack)({
     display: 'flex',
     alignItems: 'center',
     gap: '3rem',
-}));
+});

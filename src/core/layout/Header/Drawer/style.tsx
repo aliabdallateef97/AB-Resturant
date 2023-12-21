@@ -1,14 +1,13 @@
 import { Stack,styled } from "@mui/material"; 
-import { NavLink } from "react-router-dom";
 
-export const LogoContainer=styled(Stack)(({theme})=>({
+export const LogoContainer=styled(Stack)({
     padding:'20px 10px',
     display:'flex',
     flexDirection:'column',
     gap:'10px'
-}))
+})
 
-export const ListItem=styled(Stack)(({theme})=>({
+export const ListItem=styled(Stack)({
     display:'flex',
     flexDirection:'column',
     width:'100%',
@@ -18,5 +17,4 @@ export const ListItem=styled(Stack)(({theme})=>({
         width:'100%'
         
     }
-    
-}))
+})

@@ -1,7 +1,7 @@
 import {Stack,styled} from '@mui/material'
 
 export const Footer=styled(Stack)(({theme})=>({
-    backgroundColor: theme.palette.header.main,
+    backgroundColor: theme.palette.secondary.dark,
     width:'100%',
     padding:'6px',
     alignItems:'center',

@@ -26,7 +26,7 @@ const CustomedTypo = ({
       colorTheme = theme.palette.primary.light;
       break;
     case "gray":
-      colorTheme = theme.palette.primary.gray;
+      colorTheme = theme.palette.secondary.light;
       break;
     case "blue":
       colorTheme = theme.palette.primary.main;

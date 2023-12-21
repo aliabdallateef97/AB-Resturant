@@ -30,10 +30,17 @@ type ModalProps = {
 };
 
 const Modal: React.FC<ModalProps> = (props) => {
+  const overlayElement = document.getElementById('overlay');
+  const modalElement = document.getElementById('modal');
+
+  if (!overlayElement || !modalElement) {
+    console.error('Required DOM element not found');
+    return null; // or some fallback UI
+  }
   return (
     <React.Fragment>
-      {ReactDOM.createPortal(<Overlay onClose={props.onClose} />, document.getElementById('overlay'))}
-      {ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay>, document.getElementById('modal'))}
+      {ReactDOM.createPortal(<Overlay onClose={props.onClose} />, overlayElement)}
+      {ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay>, modalElement)}
     </React.Fragment>
   );
 };

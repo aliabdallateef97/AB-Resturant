@@ -5,12 +5,11 @@ export const darkPalette = {
     main: "#5D5D81",
     dark: "#ffffff",
     light: "#333333",
-    gray:"#F2F2F2"
   }, 
   secondary: {
     main: "#BDBDBD",
-    light:"#4F4F4F",
-    dark: "#828282",
+    light:"#F2F2F2",
+    dark: '#795757',
   },
   background: {
     default: "#333333",

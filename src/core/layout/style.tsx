@@ -1,6 +1,6 @@
 import { styled,Stack } from "@mui/material";
 
-export const Root = styled("div")(({ theme }) => ({
+export const Root = styled("div")({
   display:'flex',
   flexDirection:'column',
   flexGrow: 1,
@@ -8,9 +8,9 @@ export const Root = styled("div")(({ theme }) => ({
   overflow: "hidden",
   position: "relative",
   minHeight:'100vh'
-}));
+});
 
 
-export const ChildrenRoot = styled(Stack)(({ theme }) => ({
+export const ChildrenRoot = styled(Stack)({
 minHeight:"calc(100vh - 100px)"
-}));
+});

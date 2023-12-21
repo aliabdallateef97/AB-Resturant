@@ -5,12 +5,11 @@ export const lightPalette = {
     main: "#3B3355",
     dark: "#333333",
     light: "#ffffff",
-    gray:"#4F4F4F"
   },
   secondary: {
     main: "#828282",
-    light:"#FFFFFF",
-    dark: "#BDBDBD",
+    light:"#4F4F4F",
+    dark: 'hsl(215, 35%, 81%)',
   },
   background: {
     default: "#ffffff",
