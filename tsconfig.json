@@ -5,10 +5,9 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "typeRoots": [
-      "./node_modules/@types",
-      "./node_modules/@splidejs/react-splide/dist/types"
-    ],
+    "declarationDir": "./dist/types",
+    "declaration": true,
+
 
     /* Bundler mode */
     "moduleResolution": "bundler",
