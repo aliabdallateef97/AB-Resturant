@@ -1,4 +1,3 @@
-import React from 'react'
 import { Container, Card } from './style'
 import {Skeleton} from '@mui/material'
 

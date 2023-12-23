@@ -1,6 +1,6 @@
 import {Stack ,styled} from '@mui/material'
 
-export const Card=styled(Stack)(({theme})=>({
+export const Card=styled(Stack)({
     display: 'flex',
     flexDirection: 'column',
     alignItems:"center",
@@ -18,7 +18,7 @@ export const Card=styled(Stack)(({theme})=>({
             maxWidth: '100%',
         }
     }
-}))
+})
 
 export const MealName=styled(Stack)({
     height: '3rem',

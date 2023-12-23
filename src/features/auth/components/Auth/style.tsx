@@ -20,12 +20,12 @@ export const SecondStack=styled(Stack)(({theme})=>({
     }
 }))
 
-export const StyledForm=styled('form')(({theme})=>({
+export const StyledForm=styled('form')({
 display:'flex',
 width:'90%',
 flexDirection:'column',
 gap:'30px',
-}))
+})
 
 export const ImgContainer=styled(Stack)(({theme})=>({
     width:'40%',
