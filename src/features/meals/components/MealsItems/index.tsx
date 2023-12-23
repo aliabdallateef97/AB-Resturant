@@ -12,7 +12,7 @@ const MealItem = () => {
         title={<FormattedMessage id="main-course" />}
         number={9}
       />
-      {/* <MealSlider
+      <MealSlider
         type="side dish"
         title={<FormattedMessage id="side-dish" />}
         number={9}
@@ -46,7 +46,7 @@ const MealItem = () => {
         type="dessert"
         title={<FormattedMessage id="dessert" />}
         number={9}
-      /> */}
+      />
     </Container>
   );
 };
