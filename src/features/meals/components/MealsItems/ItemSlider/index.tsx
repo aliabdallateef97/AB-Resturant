@@ -1,12 +1,21 @@
 import { ReactNode } from "react";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import MealCard from "../MealCard";
 import { useGetMealsItems } from "@/features/meals/services";
 import { SectionTitle } from "./style";
 import { CustomedTypography,MetaData } from "@/core/components";
 import SkeletonCard from "../SkeletonCard";
 import { useTheme } from "@mui/material";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+// import Swiper core and required modules
+import  {Navigation, Pagination, FreeMode}  from "swiper/modules";
+
 
 
 type PropsType = {
@@ -26,24 +35,26 @@ const MealSlider = ({ type, title,number }: PropsType) => {
         <CustomedTypography colorprops="light" variant="h4">{title}</CustomedTypography>
       </SectionTitle>
       <MetaData loading={isLoading} LoadingSkeleton={<SkeletonCard />}>
-        <Splide
-          options={{
-            fixedWidth: "270px",
-            arrows: false,
-            pagination: false,
-            drag: "free",
-            gap: "2rem",
-            direction: theme.direction === "ltr" ? "ltr" : "rtl",
-          }}
+      <Swiper
+          modules={[Navigation, Pagination, FreeMode]}
+          width={270}
+          spaceBetween={32}
+          freeMode={true}
+          // pagination={{
+          //   clickable: false,
+          // }}
+          // navigation={false}
+          draggable={true}
+          dir={ theme.direction === "ltr" ? "ltr" : "rtl"}
         >
           {data?.map((item) => {
             return (
-              <SplideSlide key={item.id}>
+              <SwiperSlide  key={item.id}>
                 <MealCard image={item.img} title={item.title} id={item.id} />
-              </SplideSlide>
+              </SwiperSlide >
             );
           })}
-        </Splide>
+        </Swiper>
         </MetaData>
     </>
   );
