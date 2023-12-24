@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode,useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import MealCard from "../MealCard";
@@ -27,6 +27,11 @@ type PropsType = {
 const MealSlider = ({ type, title,number }: PropsType) => {
   const { data,isLoading } = useGetMealsItems( {type,number} );
   const theme=useTheme()
+  const [direction ,setDirection]=useState(theme.direction)
+  
+  const updateDirection=()=>{
+    setDirection(theme.direction)
+  }
 
 
   return (
@@ -45,7 +50,8 @@ const MealSlider = ({ type, title,number }: PropsType) => {
           // }}
           // navigation={false}
           draggable={true}
-          dir={ theme.direction === "ltr" ? "ltr" : "rtl"}
+          dir={ direction}
+          onUpdate={updateDirection}
         >
           {data?.map((item) => {
             return (
